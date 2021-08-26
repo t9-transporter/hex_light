@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
 body {
   font-family: "Montserrat", sans-serif;
-  background: #3ea0eb;
+  background: black;
 }
 *,
 *::before,
@@ -67,19 +67,19 @@ body {
   z-index: -1;
 }
 .honeycomb-cell::before {
-  background: #fff;
+  background: black;
   transform: scale(1.055);
 }
-.honeycomb-cell::after {
+/* .honeycomb-cell::after {
   background: #3ea0eb;
   opacity: 0.5;
   transition: opacity 350ms;
-}
+} */
 .honeycomb-cell:hover .honeycomb-cell__title {
   opacity: 0;
 }
 .honeycomb-cell:hover::before {
-  background: #72f88e;
+  background: #f535a5;
 }
 .honeycomb-cell:hover::after {
   opacity: 0;
@@ -251,19 +251,19 @@ body {
 }
 @media (min-width: 1700px) {
   .honeycomb-cell:nth-child(14),
-  .honeycomb-cell:nth-child(40),
-  .honeycomb-cell:nth-child(65),
-  .honeycomb-cell:nth-child(91) {
-    margin-left: calc(50% - 830px);
+  .honeycomb-cell:nth-child(39),
+  .honeycomb-cell:nth-child(64),
+  .honeycomb-cell:nth-child(89) {
+    margin-left: calc(50% - 850px);
   }
   .honeycomb-cell:nth-child(25),
-  .honeycomb-cell:nth-child(51),
-  .honeycomb-cell:nth-child(77),
-  .honeycomb-cell:nth-child(103) {
-    margin-right: calc(50% - 830px);
+  .honeycomb-cell:nth-child(50),
+  .honeycomb-cell:nth-child(75),
+  .honeycomb-cell:nth-child(100) {
+    margin-right: calc(50% - 850px);
   }
 
-  .honeycomb-cell:nth-child(n + 104) {
+  .honeycomb-cell:nth-child(n + 101) {
     display: none;
   }
 }
