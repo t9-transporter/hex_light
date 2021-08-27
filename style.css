@@ -67,23 +67,51 @@ body {
   z-index: -1;
 }
 .honeycomb-cell::before {
-  background: black;
-  transform: scale(1.055);
+  /* background: black; */
+  transform: scale(0.8);
+  animation: bgColor 5s infinite linear;
+}
+@keyframes bgColor {
+  0% {
+    background-color: #ff0000;
+  }
+  25% {
+    background-color: #ffa500;
+  }
+  37.5% {
+    background-color: #ffff00;
+  }
+  50% {
+    background-color: #7fff00;
+  }
+  62.5% {
+    background-color: #00ffff;
+  }
+  75% {
+    background-color: #0000ff;
+  }
+  87.5% {
+    background-color: #9932cc;
+  }
+  100% {
+    background-color: #ff1493;
+  }
 }
 /* .honeycomb-cell::after {
   background: #3ea0eb;
   opacity: 0.5;
   transition: opacity 350ms;
 } */
-.honeycomb-cell:hover .honeycomb-cell__title {
+/* .honeycomb-cell:hover .honeycomb-cell__title {
   opacity: 0;
-}
+} */
 .honeycomb-cell:hover::before {
-  background: #f535a5;
+  transform: scale(1.07);
 }
-.honeycomb-cell:hover::after {
+
+/* .honeycomb-cell:hover::after {
   opacity: 0;
-}
+} */
 .honeycomb__placeholder {
   display: none;
   opacity: 0;
@@ -149,7 +177,7 @@ body {
     margin-right: calc(50% - 300px);
   }
 
-  .honeycomb-cell:nth-child(n + 34) {
+  .honeycomb-cell:nth-child(n + 33) {
     display: none;
   }
 }
@@ -161,91 +189,91 @@ body {
   }
   .honeycomb-cell:nth-child(11),
   .honeycomb-cell:nth-child(22),
-  .honeycomb-cell:nth-child(34) {
+  .honeycomb-cell:nth-child(33) {
     margin-right: calc(50% - 350px);
   }
 
-  .honeycomb-cell:nth-child(n + 41) {
+  .honeycomb-cell:nth-child(n + 40) {
     display: none;
   }
 }
 @media (min-width: 987px) and (max-width: 1123px) {
   .honeycomb-cell:nth-child(8),
   .honeycomb-cell:nth-child(21),
-  .honeycomb-cell:nth-child(35) {
+  .honeycomb-cell:nth-child(34) {
     margin-left: calc(50% - 420px);
   }
   .honeycomb-cell:nth-child(13),
   .honeycomb-cell:nth-child(26),
-  .honeycomb-cell:nth-child(40) {
+  .honeycomb-cell:nth-child(39) {
     margin-right: calc(50% - 420px);
   }
 
-  .honeycomb-cell:nth-child(n + 48) {
+  .honeycomb-cell:nth-child(n + 47) {
     display: none;
   }
 }
 @media (min-width: 1124px) and (max-width: 1263px) {
   .honeycomb-cell:nth-child(9),
   .honeycomb-cell:nth-child(24),
-  .honeycomb-cell:nth-child(40) {
+  .honeycomb-cell:nth-child(39) {
     margin-left: calc(50% - 500px);
   }
   .honeycomb-cell:nth-child(15),
   .honeycomb-cell:nth-child(30),
-  .honeycomb-cell:nth-child(46) {
+  .honeycomb-cell:nth-child(45) {
     margin-right: calc(50% - 500px);
   }
 
-  .honeycomb-cell:nth-child(n + 55) {
+  .honeycomb-cell:nth-child(n + 54) {
     display: none;
   }
 }
 @media (min-width: 1264px) and (max-width: 1400px) {
   .honeycomb-cell:nth-child(10),
   .honeycomb-cell:nth-child(27),
-  .honeycomb-cell:nth-child(45) {
+  .honeycomb-cell:nth-child(44) {
     margin-left: calc(50% - 600px);
   }
   .honeycomb-cell:nth-child(17),
-  .honeycomb-cell:nth-child(35),
-  .honeycomb-cell:nth-child(52) {
+  .honeycomb-cell:nth-child(34),
+  .honeycomb-cell:nth-child(51) {
     margin-right: calc(50% - 600px);
   }
 
-  .honeycomb-cell:nth-child(n + 62) {
+  .honeycomb-cell:nth-child(n + 61) {
     display: none;
   }
 }
 @media (min-width: 1401px) and (max-width: 1540px) {
   .honeycomb-cell:nth-child(11),
   .honeycomb-cell:nth-child(30),
-  .honeycomb-cell:nth-child(50) {
+  .honeycomb-cell:nth-child(49) {
     margin-left: calc(50% - 650px);
   }
   .honeycomb-cell:nth-child(19),
-  .honeycomb-cell:nth-child(39),
-  .honeycomb-cell:nth-child(58) {
+  .honeycomb-cell:nth-child(38),
+  .honeycomb-cell:nth-child(57) {
     margin-right: calc(50% - 650px);
   }
 
-  .honeycomb-cell:nth-child(n + 70) {
+  .honeycomb-cell:nth-child(n + 68) {
     display: none;
   }
 }
 @media (min-width: 1541px) and (max-width: 1700px) {
   .honeycomb-cell:nth-child(12),
-  .honeycomb-cell:nth-child(34),
-  .honeycomb-cell:nth-child(55) {
+  .honeycomb-cell:nth-child(33),
+  .honeycomb-cell:nth-child(54) {
     margin-left: calc(50% - 700px);
   }
   .honeycomb-cell:nth-child(21),
-  .honeycomb-cell:nth-child(43),
-  .honeycomb-cell:nth-child(64) {
+  .honeycomb-cell:nth-child(42),
+  .honeycomb-cell:nth-child(63) {
     margin-right: calc(50% - 700px);
   }
 
-  .honeycomb-cell:nth-child(n + 77) {
+  .honeycomb-cell:nth-child(n + 75) {
     display: none;
   }
 }
